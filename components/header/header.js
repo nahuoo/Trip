@@ -1,14 +1,19 @@
-import { MitadNegra, MitadImagen, Div } from './styledHeader'
+import { MitadNegra, MitadImagen, Div } from "./styledHeader";
+import {Navbar} from '../navbar/navbar'
 
 export const Header = () => {
-    return(
-        <Div>
-            <MitadNegra>
-            <h1>TR</h1>
-            </MitadNegra>
-            <MitadImagen>
-            <h1>IP</h1>
-            </MitadImagen>
-        </Div>   
-    )
-}
+  return (
+    <Div>
+      <MitadNegra>
+        <Navbar color='white'/>
+        <h1>TRIP</h1>
+        <p>Soluciones digitales</p>
+      </MitadNegra>
+      <MitadImagen>
+        <Navbar color='black'/>
+        <h1>TRIP</h1>
+        <p>We craft brands</p>
+      </MitadImagen>
+    </Div>
+  );
+};

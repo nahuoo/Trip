@@ -1,28 +1,18 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import {Header} from '../components/header/header'
-
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
+import { Header } from "../components/header/header";
+import { About } from "../components/about/about";
+import { Navbar } from "../components/navbar/navbar";
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Trip - Branding</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      
       <Header />
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to FUCK
-        </h1>
-        <div class="logo">
-							<span class="icon fa-gem"></span>
-						</div>
-						<div class="content">		
-						</div>
-        
-
-         
-      </main>
+      <About />
 
       <footer className={styles.footer}>
         <a
@@ -30,10 +20,10 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Trip{' '}
+          Trip{" "}
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
       </footer>
     </div>
-  )
+  );
 }
