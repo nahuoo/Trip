@@ -5,6 +5,7 @@ import { Header } from '../components/header/header'
 import { About } from '../components/about/about'
 import { Navbar } from '../components/navbar/navbar'
 import { Hero } from '../components/hero/hero'
+import { Services } from '../components/services/services'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
@@ -16,7 +17,7 @@ export default function Home() {
     console.log(isWindow)
   }, [])
   if (!isWindow) {
-    return <div>hola cadhe</div>
+    return <div>hola</div>
   } else {
     return (
       <div>
@@ -26,6 +27,7 @@ export default function Home() {
         </Head>
         <Header />
         <About />
+        <Services />
         <Hero />
         <footer className={styles.footer}>
           <p>{`Trip - `}</p>

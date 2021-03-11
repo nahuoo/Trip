@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { useSpring, animated } from 'react-spring'
+import { animated } from 'react-spring'
 
 export const Div = styled.div`
   display: flex;
@@ -33,7 +33,7 @@ export const MitadNegra = styled(animated.span)`
   font-size: 5em;
   color: white;
   width: 100%;
-  height: 100%;
+  height: 103%;
   background: black;
   position: absolute;
   animation: cambio 4s ease 2000ms;

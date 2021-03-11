@@ -10,9 +10,11 @@ export const Div = styled.div`
 
 export const Container = styled.div`
   width: 100vw;
-  height: 40vh;
-  background: transparent;
+  height: 50vh;
+  background: black;
   padding: ${(props) => props.p};
+  margin-top: ${(props) => props.m};
+
 `
 
 export const ContainerIzquierdo = styled.div.attrs(props => ({
@@ -26,7 +28,7 @@ export const ContainerIzquierdo = styled.div.attrs(props => ({
   line-height: 1.6;
   color: white;
   z-index: 2;
-  
+  margin: 10% 0;  
 `
 export const ContainerDerecho = styled.div.attrs(props => ({
   style: {
@@ -38,6 +40,7 @@ export const ContainerDerecho = styled.div.attrs(props => ({
   font-size: 1.5em;
   line-height: 1.6;
   color: white;
+  margin: 10% 0;
   
 `
 
@@ -51,5 +54,16 @@ export const Img = styled.img.attrs(props => ({
   position: absolute;
   right: ${(props) => props.right};
   top: ${(props) => props.top};
+  
+`
+
+export const LetrasGris = styled.div`
+  font-size: 30em;
+  color: grey;
+  width: 100vw;
+  text-align: center;
+  letter-spacing: 60px;
+  opacity: 0.1;
+  user-select: none;
   
 `
