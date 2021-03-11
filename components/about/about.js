@@ -26,9 +26,9 @@ export const About = () => {
     <Div>
       <Container p="10% 10% 10% 10%">
         <Parallax speed={2}>
-        <Parallax speed={-2}>
-          <Img src="/mardel.jpg" alt="mar del plata" right="20%" top="0" />
-        </Parallax>
+          <Parallax speed={-2}>
+            <Img src="/mardel.jpg" alt="mar del plata" right="20%" top="0" />
+          </Parallax>
           <ContainerIzquierdo>
             Somos un equipo interdisciplinario avocados en analizar y extraer la
             escencia de los desafíos en los negocios para presentar soluciónes
@@ -36,7 +36,7 @@ export const About = () => {
           </ContainerIzquierdo>
         </Parallax>
       </Container>
-      <Container></Container>
+
       <Container p="10% 0% 10% 20%">
         <Parallax speed={3}>
           <Img src="/startup.jpg" alt="oficina" right="80%" />
@@ -49,7 +49,6 @@ export const About = () => {
           </ContainerDerecho>
         </Parallax>
       </Container>
-      <Container></Container>
     </Div>
   )
 }
