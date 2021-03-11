@@ -1,28 +1,55 @@
-import { Div, ContainerIzquierdo, ContainerDerecho } from "./styledAbout";
+import {
+  Div,
+  ContainerIzquierdo,
+  ContainerDerecho,
+  Img,
+  Filtro,
+  Container,
+} from './styledAbout'
+import { useState, useEffect } from 'react'
+import Parallax from 'react-rellax'
 
 export const About = () => {
+  const [offsetY, setOffsetY] = useState(0)
+  const handleScroll = () => {
+    setOffsetY(window.pageYOffset)
+    console.log(offsetY)
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
   return (
     <Div>
-      <ContainerIzquierdo>
-        We craft digital experiences that embrace the unexpected, simplify the
-        complex, and create genuine connection between brands and their
-        audiences. Dedicated to experimentation, we fuse design and technology
-        into elegant solutions that bring people together. Our focus isn’t the
-        size of the project, but the size of the ideas. We’re committed to
-        collaboration — with our clients, with our partners, and with each other
-        — working together to unlock our best thinking and create timeless work
-        that inspires.
-      </ContainerIzquierdo>
-      <ContainerDerecho>
-        We craft digital experiences that embrace the unexpected, simplify the
-        complex, and create genuine connection between brands and their
-        audiences. Dedicated to experimentation, we fuse design and technology
-        into elegant solutions that bring people together. Our focus isn’t the
-        size of the project, but the size of the ideas. We’re committed to
-        collaboration — with our clients, with our partners, and with each other
-        — working together to unlock our best thinking and create timeless work
-        that inspires.
-      </ContainerDerecho>
+      <Container p="10% 10% 10% 10%">
+        <Parallax speed={2}>
+        <Parallax speed={-2}>
+          <Img src="/mardel.jpg" alt="mar del plata" right="20%" top="0" />
+        </Parallax>
+          <ContainerIzquierdo>
+            Somos un equipo interdisciplinario avocados en analizar y extraer la
+            escencia de los desafíos en los negocios para presentar soluciónes
+            innovadoras a nuestros clientes.
+          </ContainerIzquierdo>
+        </Parallax>
+      </Container>
+      <Container></Container>
+      <Container p="10% 0% 10% 20%">
+        <Parallax speed={3}>
+          <Img src="/startup.jpg" alt="oficina" right="80%" />
+        </Parallax>
+        <Parallax speed={2}>
+          <ContainerDerecho>
+            Entendemos el camino de emprendedores, pequeñas y medianas empresas
+            en tiempos de cambios por eso les proporcionamos herramientas
+            ayudandolos en su crecimiento.
+          </ContainerDerecho>
+        </Parallax>
+      </Container>
+      <Container></Container>
     </Div>
-  );
-};
+  )
+}
