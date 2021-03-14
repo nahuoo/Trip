@@ -5,7 +5,8 @@ import {
   Img,
   Filtro,
   Container,
-  LetrasGris
+  LetrasGris,
+  LetraGris
 } from './styledAbout'
 import { useState, useEffect } from 'react'
 import Parallax from 'react-rellax'
@@ -26,6 +27,7 @@ export const About = () => {
   return (
     <Div>
       <Container p="20% 10% 10% 10%">
+        <LetraGris>TRIP</LetraGris>
         <Parallax speed={2}>
           <Parallax speed={-2}>
             <Img src="/mardel.jpg" alt="mar del plata" right="20%" top="0" />
@@ -47,15 +49,10 @@ export const About = () => {
           <ContainerDerecho>
             Entendemos el camino de emprendedores, pequeñas y medianas empresas
             en tiempos de cambios por eso les proporcionamos herramientas
-            ayudandolos en su crecimiento.
+            ayudándolos en su crecimiento.
           </ContainerDerecho>
         </Parallax>
       </Container>
-      <Parallax speed={-1}>
-      <LetrasGris>
-        TRIP
-      </LetrasGris>
-      </Parallax>
     
     </Div>
   )

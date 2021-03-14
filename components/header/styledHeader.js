@@ -30,7 +30,7 @@ export const MitadNegra = styled(animated.span)`
 
   z-index: ${props => props.timing ? 0 : -1};
   display: flex;
-  font-size: 5em;
+  font-size: 7vw;
   color: white;
   width: 100%;
   height: 103%;
@@ -42,5 +42,15 @@ export const MitadNegra = styled(animated.span)`
 `
 
 export const H1 = styled(animated.h1)`
-  align-items:center;
+  
+  color: ${props => props.blanco ? "white" : "black"};
+`
+export const LetraGris = styled(animated.h1)`
+  
+  color: grey;
+  position: absolute;
+  font-size: 20em;
+  margin-top: 1em;
+  opacity:0.1;
+
 `

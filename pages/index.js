@@ -6,6 +6,7 @@ import { About } from '../components/about/about'
 import { Navbar } from '../components/navbar/navbar'
 import { Hero } from '../components/hero/hero'
 import { Services } from '../components/services/services'
+import { Form} from '../components/form/form'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
@@ -20,7 +21,7 @@ export default function Home() {
     return <div>hola</div>
   } else {
     return (
-      <div>
+      <div style={{background: 'black'}}>
         <Head>
           <title>Trip - Branding</title>
           <link rel="icon" href="/favicon.ico" />
@@ -29,6 +30,7 @@ export default function Home() {
         <About />
         <Services />
         <Hero />
+        <Form />
         <footer className={styles.footer}>
           <p>{`Trip - `}</p>
           <strong> Mar del Plata </strong>
