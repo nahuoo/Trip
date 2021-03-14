@@ -2,7 +2,7 @@ import { MitadBlanca, MitadNegra, Div, H1} from './styledHeader'
 import { Navbar } from '../navbar/navbar'
 import { useSpring } from 'react-spring'
 import { useState, useEffect } from 'react'
-
+import { BgAnimation } from './bganimation'
 export const Header = () => {
   const [timing, setTiming] = useState(false)
 
@@ -40,6 +40,7 @@ export const Header = () => {
   })
   return (
     <Div>
+      <BgAnimation />
       <MitadBlanca>
         <H1 style={FadeIn}>TRIP</H1>
       </MitadBlanca>

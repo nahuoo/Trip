@@ -9,6 +9,7 @@ import { Services } from '../components/services/services'
 import { Form} from '../components/form/form'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import { BgAnimation } from '../components/header/bganimation'
 
 export default function Home() {
   const [isWindow, setIsWindow] = useState(false)
@@ -31,7 +32,8 @@ export default function Home() {
         <Services />
         <Hero />
         <Form />
-        <footer className={styles.footer}>
+        <BgAnimation />
+        <footer >
           <p>{`Trip - `}</p>
           <strong> Mar del Plata </strong>
         </footer>
