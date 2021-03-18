@@ -29,7 +29,7 @@ export const Container = styled.div`
   border-radius: 5%;
   -moz-box-shadow: -6px 10px 19px #000000;
   -webkit-box-shadow: -6px 10px 19px #000000;
-  box-shadow: -6px 10px 19px #000000;
+  box-shadow: -6px 10px 19px rgba(10,10,10,3.2);
   padding: 1em;
   margin: 2em;
 `

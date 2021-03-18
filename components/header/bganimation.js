@@ -21,9 +21,9 @@ export const BgAnimation = () => {
 
 const Div = styled.div`
   width: 100%;
-  height: 150vh;
+  height: 300vh;
   position: absolute;
-  top: 0;
+  top: 3rem;
 
   .squares {
     height: 100%;
@@ -32,7 +32,7 @@ const Div = styled.div`
     overflow: hidden;
   }
   .square {
-    animation: squares 9.5s linear infinite;
+    animation: squares 12.5s linear infinite;
     align-self: flex-end;
     width: 1em;
     height: 1em;
@@ -106,7 +106,7 @@ const Div = styled.div`
       transform: translateY(100%) rotate(-50deg);
     }
     to {
-      transform: translateY(calc(-100vh + -100%)) rotate(20deg);
+      transform: translateY(calc(-300vh + -100%)) rotate(20deg);
     }
   }
 `

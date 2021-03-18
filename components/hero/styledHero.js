@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Div = styled.div`
   display: flex;
@@ -8,8 +8,7 @@ export const Div = styled.div`
   overflow-x: hidden;
   justify-content: center;
   align-items: center;
-
-`;
+`
 
 export const ContainerCentrado = styled.div`
   background: transparent;
@@ -17,9 +16,8 @@ export const ContainerCentrado = styled.div`
   padding: 1em;
   font-size: 1.5em;
   line-height: 1em;
-  text-align:center;
+  text-align: center;
   color: white;
   background-color: #000000;
-background-image: url("https://www.transparenttextures.com/patterns/random-grey-variations.png");
-
-`;
+  background-image: url('https://www.transparenttextures.com/patterns/random-grey-variations.png');
+`
