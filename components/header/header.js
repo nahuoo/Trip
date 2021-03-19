@@ -9,7 +9,6 @@ export const Header = () => {
   useEffect(() => {
     setTimeout(() => {
       setTiming(true)
-      console.log(timing)
     }, 2000)
   }, [])
 

@@ -17,7 +17,7 @@ export const Div = styled(animated.div)`
   box-shadow: -6px 10px 19px rgba(250, 250, 250, .2);
 
   @media (max-width: 600px) {
-    height: ${props => props.active ? "100%" : ""};
+    height: ${props => props.active ? "100%" : "3rem"};
     top: ${props => props.active ? "0%" : ""};
     right:0;
     flex-direction: ${props => props.active ? 'column-revers' : 'row'};

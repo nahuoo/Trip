@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import {useSpring} from 'react-spring'
+import { useSpring } from 'react-spring'
 import {
   Div,
   Nav,
@@ -15,15 +15,15 @@ export const Navbar = (props) => {
   const [navbarHeight, setNavbarHeight] = useState(false)
   const [prevSetY, setPrevSetY] = useState(0)
   const [currentSetY, setCurrentSetY] = useState(0)
-  const [active, setActive] = useState(false)
+  const [toogle, setToogle] = useState(false)
 
   const handleClick = () => {
-    setActive(!active)
+    setToogle(!toogle)
   }
-
+ 
+  
   const handleScroll = () => {
     setCurrentSetY(window.pageYOffset)
-    console.log(currentSetY)
     if (currentSetY < prevSetY) {
       setNavbarHeight(true)
     } else {
@@ -45,27 +45,32 @@ export const Navbar = (props) => {
 
   const FadeIn = useSpring({
     config: { duration: 250, mass: 50, tension: 5000, friction: 100 },
-    height: active ? "99%" : "10%",
-    width: active ? 200 : '',
-    from: {x: 200},
+    height: toogle.toString() ? '99%' : '10%',
+    width: toogle.toString() ? 200 : 'undefined',
+    from: { x: 200 },
   })
 
   const NavFadeIn = useSpring({
     config: { duration: 400, mass: 5, tension: 2000, friction: 200 },
-    color: active ? 'red': 'black',
-    opacity: active ? 1 : 0,
-    from: {color: 'black', opacity:0},
+    color: toogle ? 'red' : 'black',
+    opacity: toogle ? 1 : 0,
+    from: { color: 'black', opacity: 0 },
   })
 
   return (
     <>
-      <Div color={props.color} height={navbarHeight} active={active} style={FadeIn}>
-        <Logo active={active}>
+      <Div
+        color={props.color}
+        height={navbarHeight}
+        active={toogle}
+        style={FadeIn}
+      >
+        <Logo active={toogle}>
           <Link href="/" passHref>
             <a href="/caseStudies">TRIP</a>
           </Link>
         </Logo>
-        <Nav active={active} style={NavFadeIn}>
+        <Nav active={toogle} style={NavFadeIn}>
           <Link href="/caseStudies" passHref>
             <a>Trabajos</a>
           </Link>
@@ -77,8 +82,8 @@ export const Navbar = (props) => {
           </Link>
         </Nav>
         <Burger onClick={handleClick}>
-          <Line active={active} />
-          <Line2 active={active} />
+          <Line active={toogle} />
+          <Line2 active={toogle} />
         </Burger>
       </Div>
     </>

@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import { useEffect, useState } from 'react'
-import styles from '../styles/Home.module.css'
 import { Header } from '../components/header/header'
 import { About } from '../components/about/about'
 import { Navbar } from '../components/navbar/navbar'
@@ -15,7 +14,6 @@ export default function Home() {
   useEffect(() => {
     setIsWindow(true)
     Aos.init({ duration: 1000 })
-    console.log(isWindow)
   }, [])
   if (!isWindow) {
     return <div>hola</div>
