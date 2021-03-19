@@ -15,7 +15,10 @@ export const MitadBlanca = styled(animated.div)`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 5em;
+  font-size: 5em; // usar REM
+  @media (max-width: 600px) {
+    height: 95vh;
+  }
 `
 
 export const MitadNegra = styled(animated.span)`

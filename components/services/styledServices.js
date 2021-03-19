@@ -5,8 +5,7 @@ export const Div = styled(animated.div)`
   background: black;
   color:white;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
   p {
     grid-column: 1 / 4;
     margin: 0;
@@ -24,6 +23,12 @@ export const Div = styled(animated.div)`
     list-style:none;
       color: grey;
   }
+  @media (max-width: 960px) {
+  display:flex;
+  flex-direction:column;
+  margin-top: 50vh;
+  
+  }
 `
 export const Container = styled.div`
   border-radius: 5%;
@@ -32,4 +37,10 @@ export const Container = styled.div`
   box-shadow: -6px 10px 19px rgba(10,10,10,3.2);
   padding: 1em;
   margin: 2em;
+
+  @media (max-width: 960px) {
+  display:flex;
+  flex-direction:column;
+  margin-left: 10vw;
+  }
 `
