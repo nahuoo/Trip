@@ -45,8 +45,8 @@ export const Navbar = (props) => {
 
   const FadeIn = useSpring({
     config: { duration: 250, mass: 50, tension: 5000, friction: 100 },
-    height: toogle.toString() ? '99%' : '10%',
-    width: toogle.toString() ? 200 : 'undefined',
+    height: toogle ? '99%' : '10%',
+    width: toogle ? 200 : '',
     from: { x: 200 },
   })
 
