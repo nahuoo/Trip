@@ -2,7 +2,7 @@
 ## Startup from Mar del Plata
 Demo: [https://nextjs-7ipea4h94-nahuoo.vercel.app/](https://nextjs-7ipea4h94-nahuoo.vercel.app/)
 
-##Tools:
+## Tools:
 * [react](https://es.reactjs.org)
 * [NextJS](https://nextjs.org)
 * [react-spring](https://www.react-spring.io/)
