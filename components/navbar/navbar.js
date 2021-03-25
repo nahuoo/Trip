@@ -8,7 +8,6 @@ import {
   Burger,
   Line,
   Line2,
-  ContainerBurger,
 } from './styledNavbar'
 
 export const Navbar = (props) => {
@@ -67,17 +66,17 @@ export const Navbar = (props) => {
       >
         <Logo active={toogle}>
           <Link href="/" passHref>
-            <a href="/caseStudies">TRIP</a>
+            <a href="/caseStudies"><img src='/logo.svg' /></a>
           </Link>
         </Logo>
         <Nav active={toogle} style={NavFadeIn}>
-          <Link href="/caseStudies" passHref>
+          <Link href="/case-studies" passHref>
             <a>Trabajos</a>
           </Link>
-          <Link href="/ideales" passHref>
+          <Link href="#ideales" passHref>
             <a>Ideales</a>
           </Link>
-          <Link href="/contacto" passHref>
+          <Link href="#contacto" passHref>
             <a>Contacto</a>
           </Link>
         </Nav>

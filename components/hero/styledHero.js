@@ -8,6 +8,7 @@ export const Div = styled.div`
   overflow-x: hidden;
   justify-content: center;
   align-items: center;
+  font-family: 'Roboto', sans-serif;
 `
 
 export const ContainerCentrado = styled.div`
@@ -15,7 +16,7 @@ export const ContainerCentrado = styled.div`
   width: 100%;
   padding: 1em;
   font-size: 1.5em;
-  line-height: 1em;
+  line-height: 40px;
   text-align: center;
   color: white;
   background-color: #000000;

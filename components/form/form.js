@@ -2,7 +2,7 @@ import {Div} from './styledForm'
 export const Form = () => {
     return(
 <>
-<Div>
+<Div id='contacto'> 
   <h1>&bull; Contános tu proyecto &bull;</h1>
   <div className="underline">
   </div>

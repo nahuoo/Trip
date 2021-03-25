@@ -91,7 +91,7 @@ export const LetraGris = styled.p`
   font-size: 40%;
   opacity: 0.1;
   writing-mode: tb-rl;
-
+  font-family: 'Roboto', sans-serif;
   @media (max-width: 600px) {
   //letra grande
     font-size: 14rem;

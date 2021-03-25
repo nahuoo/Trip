@@ -44,7 +44,7 @@ export const Header = () => {
       </MitadBlanca>
       <MitadNegra style={opacityAnimation} timing={timing}>
         <H1 blanco style={FadeInNegro}>
-          TRIP
+          <img src="/logo.svg" />
         </H1>
         <p>Soluciones épicas</p>
       </MitadNegra>

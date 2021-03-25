@@ -6,6 +6,7 @@ export const Div = styled(animated.div)`
   color:white;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  font-family: 'Roboto', sans-serif;
   p {
     grid-column: 1 / 4;
     margin: 0;
